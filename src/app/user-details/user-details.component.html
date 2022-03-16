@@ -1,0 +1,14 @@
+<p>user-details works!</p>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Hello {{user.name}}</h5>
+      <p class="card-text">Age: {{CalculateAge(user.birthday)}}</p>
+    </div>
+    <div class="card-text" [ngSwitch]="user.contact">
+      <p>Contact me with:</p>
+      <p *ngSwitchCase="'email'">📧 {{user.email}}</p>
+      <p *ngSwitchCase="'phone'">📞 {{user.phone}}</p>
+      <p *ngSwitchDefault=""></p> 
+    </div>
+  </div>

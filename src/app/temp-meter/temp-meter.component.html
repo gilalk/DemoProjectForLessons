@@ -1,0 +1,9 @@
+<div>
+    <label for="temp">
+        Insert Your Temperature:
+        <input type="number" #insideNumber (input)="getConditionSentence(insideNumber.value)">
+    </label>
+</div>
+<div>
+    <h4>{{tempDesc}}</h4>
+</div>

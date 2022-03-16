@@ -1,0 +1,22 @@
+<form #myForm="ngForm" (submit)="handleSubmit(myForm.value)">
+    <label>
+        <input type="text" ngModel name="firstName" placeholder="שם פרטי">
+    </label>
+    <br>
+    <label>
+        <input type="text" ngModel name="lastName" placeholder="שם משפחה">
+    </label>
+    <br>
+    <label>
+        <input type="text" ngModel name="idNumber" placeholder="תעודת זהות">
+    </label>
+    <br>
+    <button>שלח</button>
+</form>
+
+<ul>
+    <h1>פרטי הסטודנט שנשלחו</h1>
+    <li>שם פרטי: {{student.firstName}}</li>
+    <li>שם משפחה: {{student.lastName}}</li>
+    <li>תעודת זהות: {{student.idNumber}}</li>
+</ul>
